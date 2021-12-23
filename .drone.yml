@@ -18,6 +18,6 @@ plugin:
   name: Artifactory
   desc: Publish files and artifacts to Artifactory
   type: publish
-  image: athieriot/drone-artifactory
+  image: prasadaws143/drone-artifactory
   labels:
     - artifactory
