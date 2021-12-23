@@ -6,9 +6,9 @@ pipeline:
       - make test
   docker:
     image: plugins/docker
-    repo: athieriot/drone-artifactory
+    repo: prasadaws143/drone-artifactory
     tag: latest
-    secrets: [ docker_username, docker_password ]
+    secrets: [prasadareti143 , Volley@143 ]
     when:
       event: push
       branch: master
