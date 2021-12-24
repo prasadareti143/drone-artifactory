@@ -4,20 +4,12 @@ pipeline:
     commands:
       - make install
       - make test
-  docker:
-    image: plugins/docker
-    repo: prasadaws143/drone-artifactory
-    tag: latest
-    secrets: [prasadareti143 , Volley@143 ]
-    when:
-      event: push
-      branch: master
-      local: false
-
-plugin:
-  name: Artifactory
-  desc: Publish files and artifacts to Artifactory
-  type: publish
-  image: prasadaws143/drone-artifactory
-  labels:
-    - artifactory
+  
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    username: prasadaws143
+    password: Volley@143
+    repo: prasadaws143/athieriot/drone-artifactory 
+    tags: latest
